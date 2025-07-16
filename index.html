@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lâmpadas da Casa</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <h1>Controle de Lâmpadas</h1>
+
+    <div class="comodo">
+        <h2>Sala</h2>
+        <div id="lampada-sala" class="lampada">💡</div>
+        <button onclick="alternarLampada('lampada-sala')">Ligar / Desligar</button>
+    </div>
+
+    <div class="comodo">
+        <h2>Cozinha</h2>
+        <div id="lampada-cozinha" class="lampada">💡</div>
+        <button onclick="alternarLampada('lampada-cozinha')">Ligar / Desligar</button>
+    </div>
+
+    <script>
+        function alternarLampada(id) {
+            const lampada = document.getElementById(id);
+            lampada.classList.toggle('acesa');
+        }
+    </script>
+
+</body>
+</html>
