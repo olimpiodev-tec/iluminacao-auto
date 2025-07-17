@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Lâmpadas da Casa</title>
     <link rel="stylesheet" href="index.css">
+    <script src="mqttws31.js" type="text/javascript"></script>
+    <script src="index.js"></script>
 </head>
 <body>
 
@@ -12,21 +14,13 @@
     <div class="comodo">
         <h2>Sala</h2>
         <div id="lampada-sala" class="lampada">💡</div>
-        <button onclick="alternarLampada('lampada-sala')">Ligar / Desligar</button>
+        <button onclick="ligarLampadaSala()">Ligar / Desligar</button>
     </div>
 
     <div class="comodo">
         <h2>Cozinha</h2>
         <div id="lampada-cozinha" class="lampada">💡</div>
-        <button onclick="alternarLampada('lampada-cozinha')">Ligar / Desligar</button>
+        <button onclick="ligarLampadaCozinha()">Ligar / Desligar</button>
     </div>
-
-    <script>
-        function alternarLampada(id) {
-            const lampada = document.getElementById(id);
-            lampada.classList.toggle('acesa');
-        }
-    </script>
-
 </body>
 </html>

@@ -20,10 +20,8 @@
         }
 
         .acesa {
-            color: yellow;
-            /* Cor da luz */
-            text-shadow: 0 0 20px yellow;
-            /* Simula brilho */
+            color: rgb(255, 0, 0);
+            text-shadow: 0 0 20px rgb(255, 0, 0);
         }
 
         button {
