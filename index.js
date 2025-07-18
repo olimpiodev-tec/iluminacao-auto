@@ -9,7 +9,7 @@ clienteWeb = new Paho.MQTT.Client('broker.hivemq.com', 8884, clientId);
 clienteWeb.connect({   
     useSSL: true, 
     onSuccess: function() {
-        console.log('A conexão com Broker foi bem sucedida')
+        alert('A conexão com Broker foi bem sucedida')
     },
     onFailure: function() {
         console.log('A conexão com Broker falhou')
